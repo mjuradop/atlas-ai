@@ -1,75 +1,91 @@
-# React + TypeScript + Vite
+# 🌍 Atlas AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Ask the world.**
 
-Currently, two official plugins are available:
+Atlas AI is an AI-powered interactive world map that answers country-related questions and highlights the results visually on a map.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Interactive world map
+- Country highlighting
+- AI-powered country recommendations
+- Clean React + TypeScript architecture
+- Future support for rankings, comparisons, and real-world datasets
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- Leaflet
+- React Leaflet
+- Node.js
+- OpenAI API
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Project Status
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Atlas AI is currently in early development.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Current Version
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**v0.1.0 — Foundation**
 
-```
+- React project setup
+- Leaflet map integration
+- Initial component structure
+- GitHub repository created
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Roadmap
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### v0.2.0 — Country Highlighting
+- Add GeoJSON country layer
+- Highlight selected countries
+- Display selected country information
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### v0.3.0 — Search Experience
+- Add search input
+- Let users ask country-related questions
+- Display structured answer cards
 
-```
+### v0.4.0 — AI Integration
+- Connect backend to OpenAI
+- Return country, ISO code, score, and explanation
+
+### v0.5.0 — Data Layer
+- Add real-world indicators
+- Support rankings and comparisons
+- Integrate public datasets
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── Map/
+│   ├── Sidebar/
+│   └── Search/
+├── data/
+├── pages/
+├── services/
+├── types/
+└── App.tsx
+
+Vision
+
+Atlas AI aims to become a visual intelligence tool for exploring the world through maps, data, and artificial intelligence.
+
+Users will be able to ask questions such as:
+
+What is the best country to study computer science?
+
+Which country has the strongest healthcare system?
+
+What countries are best for software engineers?
+
+Atlas AI will answer with maps, rankings, and explanations.
+
+Author
+
+Mario Jurado
+Computer Science student at The University of Texas at El Paso
+GitHub: @mjuradop
